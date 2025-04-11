@@ -121,4 +121,42 @@ button:hover {
 
 #weatherForm button[type="submit"]:hover {
     background: linear-gradient(135deg, #4c9b50, #976b6b); /* Change le dégradé de fond au survol */
+
+/* Media Queries pour le responsive du site */
+
+/* Styles pour les écrans de largeur entre 426px et 768px */
+@media (min-width: 426px) and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input, #citySelect {
+        font-size: 1em;
+    }
+
+    button {
+        padding: 12px 24px;
+        font-size: 1em;
+    }
+}
+
+}
+
+
+/* Styles pour les écrans de largeur entre 769px et 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+        padding: 25px;
+    }
+
+    input, #citySelect {
+        font-size: 1.1em;
+    }
+
+    button {
+        padding: 14px 28px;
+        font-size: 1.1em;
+    }
 }
