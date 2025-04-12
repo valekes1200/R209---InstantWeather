@@ -28,3 +28,29 @@ function récupérerCommunes(codePostal) {
         .then(données => afficherCommunes(données)) // Appelle la fonction pour afficher les communes
         .catch(erreur => console.error('Erreur lors de la récupération des communes:', erreur)); // Gère les erreurs
 }
+
+// Fonction pour afficher les communes dans une liste déroulante
+function afficherCommunes(communes) {
+    // Sélectionne l'élément avec l'ID 'citySelect'
+    const sélecteurVille = document.getElementById('citySelect');
+
+    // Réinitialise le contenu de la liste déroulante avec une option par défaut
+    sélecteurVille.innerHTML = '<option value="">--Sélectionnez une ville--</option>';
+
+    // Vérifie si des communes ont été trouvées
+    if (communes.length > 0) {
+        // Parcourt chaque commune et crée une option pour chacune
+        communes.forEach(commune => {
+            const option = document.createElement('option');
+            option.value = commune.code; // Définit la valeur de l'option comme le code de la commune
+            option.textContent = commune.nom; // Définit le texte de l'option comme le nom de la commune
+            sélecteurVille.appendChild(option); // Ajoute l'option à la liste déroulante
+        });
+
+        // Affiche la liste déroulante
+        sélecteurVille.style.display = 'block';
+    } else {
+        // Affiche une alerte si aucune commune n'est trouvée
+        alert('Aucune commune trouvée pour ce code postal.');
+    }
+}
