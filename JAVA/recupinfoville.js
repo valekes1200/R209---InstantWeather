@@ -20,11 +20,3 @@ document.getElementById('weatherForm').addEventListener('submit', function(évé
     récupérerCommunes(codePostal);
 });
 
-// Fonction pour récupérer les communes à partir d'un code postal
-function récupérerCommunes(codePostal) {
-    // Effectue une requête fetch vers l'API pour obtenir les communes
-    fetch(`https://geo.api.gouv.fr/communes?codePostal=${codePostal}`)
-        .then(réponse => réponse.json()) // Convertit la réponse en JSON
-        .then(données => afficherCommunes(données)) // Appelle la fonction pour afficher les communes
-        .catch(erreur => console.error('Erreur lors de la récupération des communes:', erreur)); // Gère les erreurs
-}
