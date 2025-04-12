@@ -54,3 +54,15 @@ function afficherCommunes(communes) {
         alert('Aucune commune trouvée pour ce code postal.');
     }
 }
+
+// Ajoute un écouteur d'événement pour détecter les changements dans la liste déroulante des villes
+document.getElementById('citySelect').addEventListener('change', function() {
+    // Récupère le code de la ville sélectionnée
+    const codeVilleSélectionnée = this.value;
+
+    // Vérifie si une ville a été sélectionnée
+    if (codeVilleSélectionnée) {
+        // Appelle la fonction pour récupérer la météo de la ville sélectionnée
+        récupérerMétéo(codeVilleSélectionnée);
+    }
+});
