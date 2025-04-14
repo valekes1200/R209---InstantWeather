@@ -1,7 +1,3 @@
-Voici le texte corrigé :
-
----
-
 # 🌦️ Projet de groupe "Instant Weather"
 
 ## 📝 Description
