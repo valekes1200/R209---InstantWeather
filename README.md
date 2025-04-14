@@ -8,7 +8,7 @@
 
 - **Langages** : 💻 JavaScript, 📄 HTML, 🎨 CSS, 🤖 Markdown
 - **Outil de développement** : 🔧 Visual Studio Code
-- **Accéder au Projet** : 📝 https://logoviktor.github.io/R209---InstantWeather/
+- **Accéder au Projet** : 📝 [Instant Weather](https://logoviktor.github.io/R209---InstantWeather/)
 
 ## 🎯 Objectifs du projet
 
