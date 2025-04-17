@@ -21,6 +21,7 @@ function récupérerMétéo(codeCommune) {
             document.getElementById('weatherInfo').textContent = 'Erreur lors de la récupération des données météo.';
         });
 }
+
 // Fonction pour afficher les données météorologiques
 function afficherMétéo(données) {
     // Sélectionne l'élément avec l'ID 'weatherInfo'
